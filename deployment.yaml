@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-mav-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-mav-app
+  template:
+    metadata:
+      labels:
+        app: my-mav-app
+    spec:
+      containers:
+      - name: my-mav-app-container
+        image: my-mav-app  
+        ports:
+        - containerPort: 8080
