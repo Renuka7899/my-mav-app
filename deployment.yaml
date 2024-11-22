@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-mav-app-container
-        image: my-mav-app  
+        image: renukaakkawar/my-mav-app  
         ports:
         - containerPort: 8080
